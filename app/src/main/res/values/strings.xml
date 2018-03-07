@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">LOS Simple Profile Switcher</string>
+	<string name="tile_name">Profile Switcher</string>
+	<string name="pm_notavailable">ProfileManager not available</string>
+</resources>
