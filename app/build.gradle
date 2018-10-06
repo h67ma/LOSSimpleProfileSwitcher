@@ -1,27 +1,29 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    signingConfigs {
+        release {
+        }
+    }
+    compileSdkVersion 27
     defaultConfig {
         applicationId "sancho.lossimpleprofileswitcher"
         minSdkVersion 24
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
-
+        targetSdkVersion 27
+        versionCode 2
+        versionName "1.1"
     }
     buildTypes {
         release {
             minifyEnabled true
-            shrinkResources true
-            useProguard false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
+    }
+    productFlavors {
     }
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'org.cyanogenmod:platform.sdk:6.+'
+    implementation 'org.cyanogenmod:platform.sdk:6.+'
 }
