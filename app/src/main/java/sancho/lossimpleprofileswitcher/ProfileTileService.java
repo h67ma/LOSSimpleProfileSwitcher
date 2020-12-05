@@ -6,8 +6,8 @@ import android.widget.Toast;
 
 import java.util.UUID;
 
-import cyanogenmod.app.Profile;
-import cyanogenmod.app.ProfileManager;
+import lineageos.app.Profile;
+import lineageos.app.ProfileManager;
 
 public class ProfileTileService extends TileService
 {
